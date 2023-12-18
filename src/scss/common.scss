@@ -1,0 +1,113 @@
+// Заголовки, общие БЄМ блоки и проче...
+.title {
+  &_mb {
+    margin-bottom: 20px;
+    @media (min-width:$mobile){
+      margin-bottom: 40px;
+    }
+    @media (min-width:$tablet){
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  letter-spacing: 0.72px;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width:$mobile){
+    font-size: 3.6rem;
+    letter-spacing: 1.44px;
+    font-weight: 700;
+  }
+}
+
+
+.slider-pagination {
+  display: flex;
+  gap: 32px;
+
+  @media (min-width:$mobile){
+    gap: 39px;
+  }
+
+  
+  .swiper-pagination-bullet {
+    border: 1px solid #000000;
+    &-active {
+      background-color: #000000;
+    }
+    &:not(:last-child) {
+      display: flex;
+      align-items: center;
+      &::after {
+        content:'';
+        display: inline-block;
+        margin-left: 20px;
+        flex: 0 0 10px;
+        height: 1px;
+        background-color: #000000;
+
+        @media (min-width:$mobile){
+          margin-left: 28px;
+          flex: 0 0 17px;
+          height: 1px;
+        }
+      }
+    }
+  }
+
+  &_white {
+    .swiper-pagination-bullet {
+      border: 1px solid #ffffff;
+      &:not(:last-child) {
+        &::after {
+          background-color: #ffffff;
+        }
+      }
+      &-active {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+
+  @media (min-width:$mobile){
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.slider-navigation {
+
+  // .slider-navigation__arrow
+  &__arrow {
+    // background-image: url("@img/icons/arrow.svg");
+    // background-size: cover;
+    // width: 40px;
+    // height: 20px;
+
+    &::before {
+      font-size: 34px;
+    }
+    // .slider-navigation__arroe_prev
+    &_prev {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+
+    // .slider-navigation__arroe_next
+    &_next {}
+  }
+}

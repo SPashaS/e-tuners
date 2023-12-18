@@ -1,0 +1,177 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+body.popup-show::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 0;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+
+	@media (min-width:$mobileSmall){
+		padding: 30px 10px;
+	}
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #fff;
+	padding: 35px 15px;
+	width: 100%;
+	max-width: 570px;
+	// min-height: 600px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.21);
+
+	@media (min-width:$mobile){
+		padding: 35px; 
+	}
+
+	.lock & {
+		visibility: visible;
+	}
+}
+
+.popup__close {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	@media (min-width:$mobileSmall){
+		right: 33px;
+		top: 32px;
+	}
+
+
+	&::before {
+		font-size: 25px;
+	}
+}
+
+
+
+.order-call {
+	display: grid;
+	justify-items: center;
+	font-family: Montserrat;
+	font-size: 1.8rem;
+
+	// .order-call__title
+	&__title {
+		margin-bottom: 90px;
+		// font-family: Montserrat;
+		font-size: 2rem;
+	}
+
+	// .order-call__form
+	&__form {
+		min-width: 100%;
+		margin-bottom: 55px;
+		@media (min-width:$mobile){
+			min-width: 492px; 
+		}
+	}
+
+	// .order-call__politics-user
+	&__politics-user {
+		max-width: 390px;
+		text-align: center;
+		font-weight: 300;
+		a {
+			color: #025199;
+		}
+	}
+
+}
+
+
+.form {
+	display: grid;
+	gap: 40px;
+
+	&_service {
+		.form__submit {
+			input {
+				min-width: 160px;
+			}
+		}
+	}
+
+	// .form__row
+	&__row {
+		padding: 10px;
+		display: grid;
+		gap: 20px;
+	}
+
+	&__label {
+		letter-spacing: 0.8px;
+		text-transform: uppercase;
+	}
+
+	// .form__input
+	&__input {
+		height: 42px;
+		border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+		position: relative;
+		
+		input {
+			background-color: transparent;
+			outline: none;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 22px;
+
+			&::placeholder {
+				color: #B5B5B5;
+			}
+		}
+	}
+
+	// .form__submit
+	&__submit {
+		display: flex;
+		justify-content: center;
+	}
+
+}
