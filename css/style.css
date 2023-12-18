@@ -692,13 +692,6 @@ h2 {
     font-size: 1.4rem;
   }
 }
-@media (hover: hover) {
-  .menu-item:hover .submenu {
-    transform: translate(-50%, 0);
-    opacity: 1;
-    visibility: visible;
-  }
-}
 .menu-item__item-title {
   display: inline-flex;
   flex-direction: row-reverse;
@@ -1288,6 +1281,11 @@ h2 {
 @media (min-width: 767.98px) {
   .why-we__slider-pagination {
     margin-top: 40px;
+  }
+}
+@media (min-width: 1279.98px) {
+  .why-we__slider-pagination {
+    display: none;
   }
 }
 
