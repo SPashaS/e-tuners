@@ -193,8 +193,8 @@
 						<h2 class="filter__title title title_mb">Чип тюнинг автомобилей</h2>
 
 						<form class="filter__body" action="/">
-							<select name="mark_id" id="marks" class="filter__select">
-								<option value="15">МАРКА</option>
+							<select name="mark_id" id="marks" class="filter__select" data-submit>
+								<option value="0">МАРКА</option>
 								<option value="1">Audi</option>
 								<option value="2">BMW</option>
 								<option value="3">Bentley</option>
@@ -210,36 +210,16 @@
 								<option value="13">Genesis</option>
 								<option value="14">Hyundai</option>
 							</select>
-							<select name="model_id" id="models" class="filter__select" disabled>
+							<select name="model_id" id="models" class="filter__select" disabled data-submit>
 								<option value="1">МОДЕЛЬ</option>
-								<option value="14">Gearbox</option>
-								<option value="2">A1</option>
-								<option value="3">A3</option>
-								<option value="4">A4</option>
-								<option value="5">A5</option>
-								<option value="6">A6</option>
-								<option value="7">A7</option>
-								<option value="8">A8</option>
-								<option value="9">Q2</option>
-								<option value="10">Q3</option>
-								<option value="11">Q5</option>
-								<option value="12">Q7</option>
-								<option value="13">Q8</option>
-							</select>
-							<select name="year_id" id="years" class="filter__select" disabled>
-								<option value="1">ГОД</option>
-								<option value="2">4G Mk1 | 2010 - 2014</option>
-								<option value="3">4G Mk2 | 2014 - 2018</option>
-								<option value="4">2018 - ...</option>
 
 							</select>
-							<select name="engine_id" id="engines" class="filter__select" data-submit disabled>
+							<select name="year_id" id="years" class="filter__select" disabled data-submit>
+								<option value="1">ГОД</option>
+
+							</select>
+							<select name="engine_id" id="engines" class="filter__select" disabled data-submit>
 								<option value="1">МОТОР</option>
-								<option value="2">2.8 FSI 204 лс</option>
-								<option value="3">3.0 TFSI 300 лс</option>
-								<option value="4">3.0 TFSI 310 лс</option>
-								<option value="5">3.0 TDI 204 лс</option>
-								<option value="6">3.0 Bi TDI 313 лс</option>
 							</select>
 						</form>
 
