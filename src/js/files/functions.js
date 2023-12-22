@@ -414,7 +414,7 @@ export function menuInit() {
 	if (iconMenu) {
 		iconMenu.addEventListener("click", function (e) {
 			if (bodyLockStatus) {
-				bodyLockToggle();
+				// bodyLockToggle();
 				closeOpenSubMenu();
 				document.documentElement.classList.toggle("menu-open");
 			}

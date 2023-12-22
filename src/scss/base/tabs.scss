@@ -5,17 +5,25 @@
 	}
 	// .tabs__title
 	&__title {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+		border: 1px solid #DADADA;
+		color: #DADADA;
+		padding: 10px;
+		text-transform: uppercase;
+		letter-spacing: 0.64px;
+		font-size: 1.2rem;
+
+		@media (min-width:$mobile){
+			padding: 20px;
+			font-size: 1.4rem;
+		}
+
 		&._tab-active {
-			border: 1px solid #000;
+			color: var(--main-color-text);
+			border: 1px solid #ffffff;
 		}
 	}
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
 	}
 	// .tabs__body
 	&__body {

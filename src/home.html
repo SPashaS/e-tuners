@@ -9,45 +9,66 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
+
 			<div class="page__promo promo">
 				<div class="promo__container">
 					<div class="promo__slider">
 						<div class="promo__swiper">
 							<div class="promo__slide slide-promo">
-								<img class="slide-promo__img" src="@img/promo/1.jpg" alt="1">
+								<img class="slide-promo__img" src="img/promo/1.jpg" alt="1">
 								<div class="slide-promo__content">
 									<div class="slide-promo__title">ЧИП-ТЮНИНГ АВТОМОБИЛЕЙ В казахстане</div>
 									<div class="slide-promo__subtitle">мы любим, то что делаем</div>
-									<p class="slide-promo__text">Мы являемся официальным представителем компании Etuners Greece (<a
-											href="https://www.etuners.gr/">etuners.gr</a>) в Республике Казахстан. </p>
+									<div class="slide-promo__text">
+										<p>
+											Мы являемся официальным представителем компании Etuners Greece
+											(<a href="https://www.etuners.gr/">etuners.gr</a>) в Республике Казахстан.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="promo__slide slide-promo">
-								<img class="slide-promo__img" src="@img/promo/2.jpg" alt="2">
+								<img class="slide-promo__img" src="img/promo/2.jpg" alt="2">
 								<div class="slide-promo__content">
 									<div class="slide-promo__title">Более 10 Лет опыта в Казахстане</div>
 									<div class="slide-promo__subtitle">Работаем с 2007 года</div>
-									<p class="slide-promo__text">Представительства находятся в 30 странах. Более 150 дилеров по всему
-										миру. В Республике Казахстан 3 дилера. </p>
+									<div class="slide-promo__text">
+										<p>
+											Представительства находятся в 30 странах. Более 150 дилеров по всему
+											миру. В Республике Казахстан 3 дилера.
+										</p>
+
+									</div>
 								</div>
 							</div>
 							<div class="promo__slide slide-promo">
-								<img class="slide-promo__img" src="@img/promo/3.jpg" alt="3">
+								<img class="slide-promo__img" src="img/promo/3.jpg" alt="3">
 								<div class="slide-promo__content">
 									<div class="slide-promo__title">Техническая поддержка на всем этапе подготовки. </div>
 									<div class="slide-promo__subtitle">Нестандартные решения: </div>
-									<p class="slide-promo__text">Можем настроить с любой конфигурацией, под любые цели и задачи. Будь это
-										гражданская машина или проект для автоспорта. </p>
+									<div class="slide-promo__text">
+										<p>
+											Можем настроить с любой конфигурацией, под любые цели и задачи. Будь это
+											гражданская машина или проект для автоспорта.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="promo__slide slide-promo">
-								<img class="slide-promo__img" src="@img/promo/4.jpg" alt="4">
+								<img class="slide-promo__img" src="img/promo/4.jpg" alt="4">
 								<div class="slide-promo__content">
 									<div class="slide-promo__title">Самая доступная цена в казахстане</div>
 									<div class="slide-promo__subtitle">предлагаем лучшие решения на рынке</div>
-									<p class="slide-promo__text">Программное обеспечение тестируется в наших штаб квартирах в Греции,
-										Сингапуре, Австралии и Российской Федерации. Много сил и времени тратится на разработку, чтобы
-										конечный потребитель получил безопасный и мощный продукт. </p>
+									<div class="slide-promo__text">
+										<p>
+											Программное обеспечение тестируется в наших штаб квартирах в Греции,
+											Сингапуре, Австралии и Российской Федерации.
+										</p>
+										<p class="slide-promo__text_tab">
+											Много сил и времени тратится на разработку, чтобы
+											конечный потребитель получил безопасный и мощный продукт.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -55,71 +76,262 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="page__filter filter" id="filter">
 				<div class="filter__container">
 					<div class="filter__wrapper">
 						<h2 class="filter__title title title_mb">Чип тюнинг автомобилей</h2>
-						<div class="filter__body">
-							<div class="filter__item _icon-arrow-up">
-								<div class="filter__item-select">марка</div>
-								<!-- <div class="filter__item-dropdown">
-									<div class="jq-selectbox__dropdown">
-										<ul>
-											<li>Alfa Romeo</li>
-											<li>Audi</li>
-											<li>BMW</li>
-											<li>Bentley</li>
-											<li>Cadillac</li>
-											<li>Changan</li>
-											<li>Chery</li>
-											<li>GAC</li>
-											<li>EXEED</li>
-											<li>FAW</li>
-											<li>Ferrari</li>
-											<li>Ford</li>
-											<li>Geely</li>
-											<li>Genesis</li>
-											<li>Haval</li>
-											<li>Hyundai</li>
-											<li>Infiniti</li>
-											<li>Jaguar</li>
-											<li>Jeep</li>
-											<li>Kia</li>
-											<li>Lamborghini</li>
-											<li>Land Rover</li>
-											<li>Lexus</li>
-											<li>Maserati</li>
-											<li>McLaren</li>
-											<li>Mazda</li>
-											<li>Mercedes</li>
-											<li>MINI</li>
-											<li>Mitsubishi</li>
-											<li>Nissan</li>
-											<li>Opel</li>
-											<li>Porsche</li>
-											<li>Renault</li>
-											<li>Saab</li>
-											<li>SsangYong</li>
-											<li>Skoda</li>
-											<li>Seat</li>
-											<li>Smart</li>
-											<li>Toyota</li>
-											<li>Volkswagen</li>
-											<li>Volvo</li>
-										</ul>
-									</div>
-								</div> -->
-							</div>
-							<div class="filter__item _icon-arrow-up">
-								<div class="filter__item-select">модель</div></div>
-							<div class="filter__item _icon-arrow-up">
-								<div class="filter__item-select">год</div></div>
-							<div class="filter__item _icon-arrow-up">
-								<div class="filter__item-select">мотор</div></div>
+
+						<form class="filter__body" action="/">
+							<select name="mark_id" id="marks" class="filter__select" data-submit>
+								<option value="0">МАРКА</option>
+								<option value="1">Audi</option>
+								<option value="2">BMW</option>
+								<option value="3">Bentley</option>
+								<option value="4">Cadillac</option>
+								<option value="5">Changan</option>
+								<option value="6">Chery</option>
+								<option value="7">GAC</option>
+								<option value="8">EXEED</option>
+								<option value="9">FAW</option>
+								<option value="10">Ferrari</option>
+								<option value="11">Ford</option>
+								<option value="12">Geely</option>
+								<option value="13">Genesis</option>
+								<option value="14">Hyundai</option>
+							</select>
+							<select name="model_id" id="models" class="filter__select" disabled data-submit>
+								<option value="1">МОДЕЛЬ</option>
+
+							</select>
+							<select name="year_id" id="years" class="filter__select" disabled data-submit>
+								<option value="1">ГОД</option>
+
+							</select>
+							<select name="engine_id" id="engines" class="filter__select" disabled data-submit>
+								<option value="1">МОТОР</option>
+							</select>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="page__result-search result-search-block">
+				<div class="result-search-block__container">
+					<div class="result-search">
+						<div class="result-search__row result-search__row_header">
+							<span class="mod">Модификация</span>
+							<span class="vol">Объем двигателя</span>
+							<span class="hp">Мощность</span>
+							<span class="nm">Крутящий момент</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">audi a3 1.4 TsFI 122 л.с.</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">122 лс</span>
+							<span class="nm">200 нм</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">Audi Q5 3.0 TDI 240 лс</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">240лс</span>
+							<span class="nm">500 нм</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">Audi A5 2.0 TFSI 252 лс</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">252 лс</span>
+							<span class="nm">370 нм</span>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="page__result-stages result-stages-block">
+				<div class="result-stages-block__container">
+
+					<div data-tabs class="result-stages-block__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Stage 1</button>
+							<button type="button" class="tabs__title">Stage 2</button>
+							<button type="button" class="tabs__title">Stage 3</button>
+							<button type="button" class="tabs__title">Stage 4</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">1</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">2</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">3</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">4</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="result-stages-block__price-row">
+						<div class="result-stages-block__price">Стоимость: 777 103,72 <span> в </span></div>
+						<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+					</div>
+
+
+				</div>
+			</div>
+
+
 			<section class="page__program program">
 				<div class="program__container">
 					<h2 class="program__title">
@@ -250,7 +462,8 @@
 									Нажмите на кнопку, чтобы начать диалог в выбранном мессенжере
 								</p>
 								<div class="answers__footer-buttons">
-									<a href="https://www.instagram.com/etunerskz/?igshid=MmVlMjlkMTBhMg%3D%3D" class="button button_inst">Instagram</a>
+									<a href="https://www.instagram.com/etunerskz/?igshid=MmVlMjlkMTBhMg%3D%3D"
+										class="button button_inst">Instagram</a>
 									<a href="#" class="button">+7 (700) 963-51-31</a>
 								</div>
 							</div>
@@ -321,7 +534,7 @@
 							</div>
 						</div>
 						<div class="desc__footer">
-							<div class="desc__footer-text">etuners</div>
+							<div class="desc__footer-text"></div>
 							<img src="@img/desc/3.jpg" alt="3">
 						</div>
 					</div>
@@ -353,11 +566,10 @@
 
 						</div>
 						<div class="brends__slider-navigation slider-navigation">
-							<button class="slider-navigation__arrow slider-navigation__arrow_next _icon-arrow"
-							aria-label="Следующий слайд"></button>
-							<button class="slider-navigation__arrow slider-navigation__arrow_prev _icon-arrow"
-								aria-label="Предыдущий слайд"></button>
-
+							<button class="slider-navigation__arrow slider-navigation__arrow_prev _icon-arrow-up"
+							aria-label="Предыдущий слайд"></button>
+							<button class="slider-navigation__arrow slider-navigation__arrow_next _icon-arrow-up"
+								aria-label="Следующий слайд"></button>
 						</div>
 					</div>
 				</div>
@@ -392,7 +604,7 @@
 								<p class="connect__body-text">Наша цель - помочь подобрать вам оптимальный Чип-тюнинг под ваши
 									потребности. Не стесняйтесь, давайте пообщаемся! </p>
 							</div>
-							<button class="connect__button button button_br">оставить заявку</button>
+							<button class="connect__button button button_br" data-popup="#order-call">оставить заявку</button>
 						</div>
 					</div>
 

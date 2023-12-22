@@ -15,6 +15,7 @@
     content:'';
     background-image: url("@img/footer/bg.jpg");
     background-position: bottom;
+    background-size: cover;
     opacity: 0.05;
     position: absolute;
     top: 0;
@@ -29,6 +30,15 @@
       padding: 0 87px; 
     }
   }
+
+  a {
+		transition: all 0.3s ease 0s;
+		@media (hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
 
   // .footer__wrapper
   &__wrapper {
@@ -60,6 +70,11 @@
   // .footer__logo
   &__logo {
     text-align: center;
+
+    @media (min-width:$mobile){
+      text-align: left;
+      order: 2;
+    }
     .logo {
       img {
         width: 52px;
@@ -78,6 +93,10 @@
   &__social {
     justify-content: center;
     @media (min-width:$mobile){
+      justify-content: end;
+    }
+
+    @media (min-width:$tablet){
       justify-content: start;
     }
   }

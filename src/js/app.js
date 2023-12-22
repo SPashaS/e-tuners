@@ -46,7 +46,7 @@ flsFunctions.menuInit();
 Документация:
 Сниппет (HTML): tabs
 */
-// flsFunctions.tabs();
+flsFunctions.tabs();
 
 /*
 Модуль "показать еще"
@@ -78,7 +78,7 @@ import * as flsForms from "./files/forms/forms.js";
 flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-// flsForms.formSubmit(true);
+flsForms.formSubmit(true);
 
 /* Модуль формы "колличество" */
 // flsForms.formQuantity();
@@ -90,7 +90,7 @@ flsForms.formFieldsInit();
 // flsForms.formRating();
 
 /* Модуль работы с select. */
-// import './libs/select.js'
+import './libs/select.js'
 
 /* (В работе) Модуль работы с масками.*/
 /*

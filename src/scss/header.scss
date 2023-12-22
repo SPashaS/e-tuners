@@ -2,15 +2,26 @@
 .header {
 	background-color: var(--accent-color);
 	color: var(--light-color-text);
-	padding-top: 31px;
-	position: relative;
-	z-index: 5;
-	// .header__container
 
+	position: relative;
+	z-index: 6;
+
+	@media (min-width:$mobile){
+		padding-top: 31px;
+	}
+	// .header__container
 	&__container {}
 
-	// .header__top
+	a {
+		transition: all 0.3s ease 0s;
+		@media (hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
 
+	// .header__top
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -52,6 +63,7 @@
 		}
 
 		@media (max-width:$mobile){
+			top: 50px;
 			width: 210px;
 		}
 
@@ -65,14 +77,6 @@
 			}
 		}
 	}
-
-
-
-
-
-
-
-
 
 
 	// .header__tel
@@ -125,21 +129,15 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
 .logo {
 	// .logo__image
 	&__image {
-		width: 126px;
-		height: 54px;
+		width: 52px;
+		aspect-ratio: 7/3;
+
+		@media (min-width:$mobile){
+			width: 126px;
+		}
 	}
 }
 
@@ -156,15 +154,23 @@
 			font-size: 1.4rem;
 		}
 	}
+	// .top-menu__tel
+	&__tel {
+		font-weight: 400;
+		&::before {
+			color: var(--main-color-text);
+		}
+		@media (min-width: 1050px) {
+			display: none;
+		}
+	}
+
 	.menu-item {
 		text-align: left;
 	}
-
 	.menu-item__item-title {
 		text-transform: uppercase;
 	}
-
-
 	.submenu {
 		width: 290px;
 		top: 100%;
@@ -202,30 +208,12 @@
 			}
 		}
 	}
-
 	.submenu-open .submenu {
     transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
-}
-
-
-
-	// // .top-menu__item-title
-	// &__item-title {
-	// 	display: inline-flex;
-	// 	flex-direction: row-reverse;
-	// 	align-items: center;
-	// 	gap: 8px;
-	// 	&::before {
-	// 		font-size: 24px;
-	// 	}
-	// }
-
-	// 	// .top-menu__has-submenu
-	// 	&__has-submenu {
-	// 		position: relative;
-	// 	}
+	
+	}
 }
 
 
@@ -256,29 +244,6 @@
 	}
 }
 
-.price-list {
-
-	// .price-list__header
-
-	&__header {}
-
-	// .price-list__body
-
-	&__body {}
-
-	// .price-list__item
-
-	&__item {}
-
-	// .price-list__item-col
-
-	&__item-col {}
-
-	// .price-list__item-price
-
-	&__item-price {}
-}
-
 
 
 .menu-item {
@@ -288,16 +253,6 @@
 	position: relative;
 	@media (max-width: 1049.98px){
 		font-size: 1.4rem;
-	}
-
-	@media (hover: hover) {
-		&:hover {
-			& .submenu {
-				transform: translate(-50%, 0);
-				opacity: 1;
-				visibility: visible;
-			}
-		}
 	}
 
 	// .menu-item__has-submenu
@@ -316,13 +271,6 @@
 	}
 
 
-}
-
-
-
-.tel {
-	font-weight: 700;
-	line-height: 1.37;
 }
 
 .your-city {
@@ -456,10 +404,6 @@
 }
 
 
-
-
-
-
 //====================================================================================================
 
 //Burger
@@ -467,15 +411,15 @@
 	display: none;
 
 	@media (max-width: 1049.98px) {
-		display: grid;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		width: 60px;
-		height: 60px;
-		padding: 20px 10px;
-		cursor: pointer;
-		z-index: 15;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 20px 10px;
+    cursor: pointer;
+    z-index: 15;
 
 		&__lines {
 			display: block;
@@ -487,7 +431,6 @@
 			&::after {
 				content: "";
 				transition: all 0.3s ease 0s;
-
 				left: 0px;
 				right: 0px;
 				position: absolute;
@@ -506,13 +449,22 @@
 			.menu-open & {
 				&::before {
 					transform: rotate(-45deg);
-					top: calc(50% - 0px);
+					top: calc(50% - 1px);
 				}
 				&::after {
 					transform: rotate(45deg);
 					bottom: calc(50% - 1px);
 				}
 			}
+		}
+	}
+	@media (max-width:$mobile){
+		width: 20px;
+    height: 20px;
+    padding: 6px 2px;
+
+		&__lines {
+			width: 16px;
 		}
 	}
 }

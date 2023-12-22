@@ -39,9 +39,43 @@ function bildSliders() {
 		});
 	}
 }
+
+const resizableSwiper = (breakpoint, swiperClass, swiperSettings, callback) => {
+	let swiper;
+
+	breakpoint = window.matchMedia(breakpoint);
+
+	const enableSwiper = function(className, settings) {
+		swiper = new Swiper(className, settings);
+
+		if (callback) {
+			callback(swiper);
+		}
+	}
+
+	const checker = function() {
+		if (breakpoint.matches) {
+			return enableSwiper(swiperClass, swiperSettings);
+		} else {
+			if (swiper !== undefined) swiper.destroy(true, true);
+			return;
+		}
+	};
+
+	breakpoint.addEventListener('change', checker);
+	checker();
+}
+
+const someFunc = (instance) => {
+	if (instance) {
+		instance.on('slideChange', function (e) {
+			console.log('*** mySwiper.activeIndex', instance.activeIndex);
+		});
+	}
+};
+
+
 // Инициализация слайдеров
-
-
 function initSliders() {
 	// Добавление классов слайдера
 	// при необходимости отключить
@@ -49,8 +83,6 @@ function initSliders() {
 	bildSliders();
 
 	// Перечень слайдеров
-
-
 	if (document.querySelector('.promo__swiper')) {
 		new Swiper('.promo__slider', {
 			// Подключаем модули слайдера
@@ -111,8 +143,10 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.why-we__swiper') && document.documentElement.clientWidth < 1280) {
-		new Swiper('.why-we__slider', {
+
+	resizableSwiper (
+		'(max-width: 1280px)',
+		'.why-we__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			//modules: [Navigation, Pagination],
@@ -169,10 +203,13 @@ function initSliders() {
 			on: {
 
 			}
-		});
-	}
-	if (document.querySelector('.desc__swiper') && document.documentElement.clientWidth < 768) {
-		new Swiper('.desc__slider', {
+		}
+	)
+	
+	resizableSwiper (
+		'(max-width: 768px)',
+		'.desc__slider',
+		{
 			// Подключаем модули слайдера
 			// для конкретного случая
 			//modules: [Navigation, Pagination],
@@ -229,8 +266,9 @@ function initSliders() {
 			on: {
 
 			}
-		});
-	}
+		}
+	)
+
 	if (document.querySelector('.brends__swiper')) {
 		new Swiper('.brends__slider', {
 			// Подключаем модули слайдера
@@ -293,8 +331,11 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.connect__swiper') && document.documentElement.clientWidth < 768) {
-		new Swiper('.connect__slider', {
+
+	resizableSwiper (
+		'(max-width: 768px)',
+		'.connect__slider',
+		{
 			// Подключаем модули слайдера
 			// для конкретного случая
 			//modules: [Navigation, Pagination],
@@ -351,9 +392,8 @@ function initSliders() {
 			on: {
 
 			}
-		});
-	}
-
+		}
+	)
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
 function initSlidersScroll() {

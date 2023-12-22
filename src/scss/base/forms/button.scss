@@ -29,11 +29,13 @@
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: var(--btn-color-hover);
+			color: rgb(248, 249, 198);
 		}
 	}
 
 	&:active {
 		background-color: var(--btn-color-hover);
+    color: rgb(248, 249, 198);
 	}
 
 	&_inst {
@@ -41,7 +43,7 @@
 		&::before {
 			content: "";
 			display: inline-block;
-			background-image: url(../img/icons/instagram.svg);
+			background-image: url('@img/icons/instagram.svg');
 			background-size: cover;
 			width: 18px;
 			height: 18px;

@@ -19,6 +19,12 @@
   // .page__filter
   &__filter {}
 
+  // .page__result-search
+  &__result-search {}
+
+  // .page__result-stages
+  &__result-stages {}
+
   // .page__program
   &__program {
   }
@@ -120,6 +126,7 @@
   }
 
 }
+
 .slide-promo {
   position: relative;
   color: var(--light-color-text);
@@ -198,6 +205,14 @@
       font-weight: 700;
       color: #3771C8;
     }
+
+    &_tab {
+      display: none;
+    }
+
+    @media (min-width:$mobile){
+      display: block; 
+    }
   }
 }
 
@@ -206,7 +221,8 @@
 //====================================================================================================
 
 .filter {
-
+  position: relative;
+  z-index: 5;
   // .filter__container
   &__container {}
 
@@ -233,8 +249,14 @@
 
   // .filter__body
   &__body {
+    max-width: 504px;
+    margin: 0 auto;
     display: grid;
     gap: 10px;
+
+    @media (min-width:$mobile){
+      gap: 20px; 
+    }
 
     @media (min-width:$tablet){
       display: flex;
@@ -271,6 +293,214 @@
 
   }
 }
+
+.result-search-block {
+
+  // .result-search-block__container
+  &__container {}
+}
+
+.result-search {
+  border-radius: 5px;
+  background: rgba(235, 241, 252, 0.5);
+  padding: 20px 10px;
+  display: grid;
+  gap: 20px;
+
+  @media (min-width:$mobile){
+    padding: 20px;
+    gap: 40px;
+  }
+
+  @media (min-width:$tablet){
+    padding: 40px 37.5px;
+  }
+
+  // .result-search__row
+  &__row {
+    font-size: 1.4rem;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    padding: 17px;
+    display: grid;
+    align-items: center;
+    @media (min-width:$mobile){
+      padding: 17px;
+      text-transform: uppercase;
+      justify-content: space-between;
+      grid-template-columns: 24.5202558635% 15.7782515991% 9.9147121535% 16.7377398721%; 
+    }
+
+    @media (min-width:$tablet){
+      padding: 17px 69px; 
+    }
+
+    // .result-search__row_header
+    &_header {
+      @media (max-width:$mobile){
+        display: none; 
+      }
+    }
+
+    @media (max-width:$mobile){
+      span {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        text-align: end;
+      }
+      .mod::before {
+        content: "Модификация: ";
+      }
+      .vol::before {
+        content: "Объем двигателя: ";
+      }
+      .hp::before {
+        content: "Мощность: ";
+      }
+      .nm::before {
+        content: "Крутящий момент: ";
+      }
+    }
+
+    @media (min-width:$mobile){
+      .hp {
+        justify-self: center;
+      }
+      .nm {
+        justify-self: end;
+        text-align: right;
+      }
+    }
+
+  }
+}
+
+.result-stages-block {
+
+  // .result-stages-block__container
+
+  &__container {}
+
+  // .result-stages-block__tabs
+
+  &__tabs {
+    margin-bottom: 40px;
+  }
+
+  // .result-stages-block__price-row
+
+  &__price-row {
+    display: grid;
+    gap: 20px;
+    padding: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    @media (min-width:$mobileSmall){
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media (min-width:$mobile){
+      padding: 14px 33px;
+    }
+    @media (min-width:$tablet){
+      padding: 14px 69px;
+      margin: 0 37.5px;
+    }
+  }
+
+  // .result-stages-block__price
+
+  &__price {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+
+    span::before {
+      content: "₸";
+    }
+
+    span::after {
+      content: "$";
+    }
+  }
+
+  // .result-stages-block__price-btn
+  &__price-btn {
+    border-radius: 5px;
+    background: #3B5998;
+    color: #ffffff;
+    padding: 4px 20px;
+    text-align: center;
+  }
+}
+
+
+
+.result-stages {
+  border-radius: 5px;
+  background: rgba(235, 241, 252, 0.5);
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  @media (min-width:$mobile){
+    padding: 20px;
+    gap: 40px; 
+  }
+
+  @media (min-width:$tablet){
+    padding: 40px 37.5px;
+
+  }
+
+
+  // .result-stages__row
+
+  &__row {
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 25.5863539446% 12.7931769723% 19.1897654584% 14.9253731343%;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    @media (min-width:$mobileSmall){
+      font-size: 1.4rem;
+    }
+
+    @media (min-width:$mobile){
+      padding: 17px;
+      text-transform: uppercase;
+      grid-template-columns: 25.5863539446% 12.7931769723% 19.1897654584% 14.9253731343%;
+    }
+
+    @media (min-width:$tablet){
+      padding: 17px 69px; 
+    }
+
+    ._3 {
+      text-align: center;
+    }
+
+    ._4 {
+      font-weight: 700;
+      text-align: right;
+    }
+    // .result-stages__row_header
+
+    &_header {
+      ._4 {
+        font-weight: 400;
+      }
+      
+    }
+  }
+}
+
 
 //====================================================================================================
 
@@ -407,6 +637,10 @@
     @media (min-width:$mobile){
       margin-top: 40px; 
     }
+
+    @media (min-width:$pc){
+      display: none; 
+    }
   }
 
 }
@@ -464,6 +698,8 @@
       aspect-ratio: 139 / 97;
       border-radius: 30px;
       box-shadow: 0px 4px 80px 0px rgba(0, 0, 0, 0.32);
+      position: relative;
+      z-index: 1;
     }
 
     @media (min-width:$tablet){
@@ -473,12 +709,14 @@
 
   // .team__body
   &__body {
+    position: relative;
+    z-index: 3;
     border-radius: 5px;
-    border: 1px solid #000;
-    background: rgba(235, 241, 252, 0.10);
+    border: 1px solid rgba(86, 86, 86, 0.43);
+    background: rgba(235, 241, 252, 0.1);
     padding: 8px;
     text-align: center;
-    background: rgba(235, 241, 252, 0.10);
+    background: rgba(235, 241, 252, 0.1);
 
     @media (min-width:$mobile){
       padding: 40px 83px; 
@@ -873,14 +1111,13 @@
   // .desc__slide-title
   &__slide-title {
     font-size: 1.4rem;
-    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.72px;
     text-transform: uppercase;
+    font-weight: 500;
 
     @media (min-width:$mobile){
       font-size: 1.8rem;
-      font-weight: 700;
     }
   }
 
@@ -890,13 +1127,9 @@
 
     @media (min-width:$mobile){
       font-size: 1.8rem;
-      font-weight: 500;
       line-height: 1.2222;
     }
 
-    @media (min-width:$tablet){
-      font-weight: 600;
-    }
   }
 
   // .desc__slider-pagination
@@ -935,17 +1168,15 @@
   // .desc__footer
   &__footer {
     position: relative;
-    padding: 102px 20px 123px;
-    display: flex;
-    justify-content: center;
+    padding-bottom: 58.9285714286%;
 
     @media (min-width:$mobile){
-      padding: 111px 37px 90px 65px;
+      padding-bottom: 34.025974026%;
       justify-content: start;
     }
 
     @media (min-width:$pc){
-      padding: 110px 37px 90px;
+      padding-bottom: 26.735218509%;
     }
     img {
       position: absolute;
@@ -961,24 +1192,22 @@
 
   // .desc__footer-text
   &__footer-text {
-    color: transparent; /* Цвет текста */
-    -webkit-text-stroke: 1px #FFFFFF; /* Толщина и цвет обводки */
-    text-stroke: 1px #FFFFFF; /* Толщина и цвет обводки (стандартное свойство) */
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 4.8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -5%);
+    background-image: url("@img/desc/etuners.png");
+    aspect-ratio: 477/98;
+    background-size: cover;
+    width: 67.8571428571%;
 
     @media (min-width:$mobile){
-      font-size: 5rem;
-      letter-spacing: 9.6px;
+      transform: translate(-50%, -50%);
+      width: 344px;
     }
 
     @media (min-width:$pc){
-      font-size: 8rem;
+      width: 477px;
     }
   }
 }
@@ -1023,7 +1252,6 @@
   // .brends__slider-navigation
   &__slider-navigation {
     margin-top: 20px;
-    display: grid;
     justify-content: start;
 
     @media (min-width:$mobile){
@@ -1036,8 +1264,6 @@
     }
   }
 }
-
-
 
 //====================================================================================================
 
@@ -1175,6 +1401,19 @@
     background-color: var(--accent-color);
     top: -10px;
     left: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(53, 80, 136, 0.2);
+      filter: blur(1.5px);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+  }
   }
 
 

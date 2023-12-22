@@ -98,7 +98,8 @@ export let formValidate = {
 	},
 	addError(formRequiredItem) {
 		formRequiredItem.classList.add('_form-error');
-		formRequiredItem.parentElement.classList.add('_form-error');
+		// formRequiredItem.parentElement.classList.add('_form-error');
+		formRequiredItem.closest('.form__row').classList.add('_form-error');
 		let inputError = formRequiredItem.parentElement.querySelector('.form__error');
 		if (inputError) formRequiredItem.parentElement.removeChild(inputError);
 		if (formRequiredItem.dataset.error) {

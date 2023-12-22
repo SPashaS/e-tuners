@@ -27,6 +27,18 @@ h2 {
   }
 }
 
+.tel {
+  font-weight: 700;
+  line-height: 1.37;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+	&::before {
+		color: #EBF1FC;
+		font-size: 18px;
+	}
+}
 
 .slider-pagination {
   display: flex;
@@ -89,25 +101,30 @@ h2 {
 }
 
 .slider-navigation {
+  display: flex;
+  gap: 20px;
 
+  @media (min-width:$mobile){
+      
+  }
   // .slider-navigation__arrow
   &__arrow {
-    // background-image: url("@img/icons/arrow.svg");
-    // background-size: cover;
-    // width: 40px;
-    // height: 20px;
 
     &::before {
-      font-size: 34px;
+      font-size: 30px;
     }
     // .slider-navigation__arroe_prev
     &_prev {
       &::before {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
       }
     }
 
     // .slider-navigation__arroe_next
-    &_next {}
+    &_next {
+      &::before{
+        transform: rotate(-90deg);
+      }
+    }
   }
 }
