@@ -820,9 +820,10 @@
       let s = [];
       return (
         e.multiple
-          ? (s = Array.from(e.options)
+          ? ((s = Array.from(e.options)
               .filter((e) => e.value)
-              .filter((e) => e.selected))
+              .filter((e) => e.selected)),
+            console.log(s))
           : s.push(e.options[e.selectedIndex]),
         {
           elements: s.map((e) => e),
@@ -921,10 +922,10 @@
         e.hasAttribute("data-submit") && e.value)
       ) {
         let t = document.createElement("button");
-        (t.type = "submit"), e.closest("form").append(t), t.click(), t.remove();
+        (t.type = "submit"), e.closest("form").append(t), console.log("send");
       }
       const t = e.parentElement;
-      this.selectCallback(t, e);
+      this.selectCallback(t, e), this.setSelects();
     }
     selectDisabled(e, t) {
       t.disabled
@@ -967,6 +968,13 @@
     }
     setLogging(e) {
       this.config.logging && c(`[select]: ${e}`);
+    }
+    setSelects() {
+      const e = document.querySelectorAll(".filter__select");
+      for (let t = 0; t < e.length; t++) {
+        const s = e[t];
+        s.hasAttribute("disabled") && console.dir(s);
+      }
     }
   })({});
   const f = {

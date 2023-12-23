@@ -1,191 +1,873 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>ЧИП-ТЮНИНГ АВТОМОБИЛЕЙ В Казахстане</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «e-tuners»</title>
 </head>
 
 <body>
+
 	<div class="wrapper">
-		<div class="rootpage">
-			<h1>Верстка «e-tuners»</h1>
-			<div class="rootpage__info">
-				Особенности проекта
+		<header class="header">
+			<div class="header__container">
+				<div class="header__top">
+					<div class="header__logo">
+						<a href="/" class="logo">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__image" src="img/logo.png" alt="Логотип"></picture>
+						</a>
+					</div>
+					<div class="header__top-main">
+						<div class="header__top-menu top-menu">
+							<a href="#filter" class="top-menu__item">Чип тюнинг</a>
+							<div class="menu-item menu-item__has-submenu">
+								<div class="menu-item__item-title _icon-arrow-up">Наши дилеры</div>
+								<div class="submenu submenu_dillers">
+									<div class="submenu__price price-list">
+										<div class="price-list__body">
+											<div class="price-list__item">г.Алматы +7(700) 963-51-31 Михаил </div>
+											<div class="price-list__item">г.Астана +7 (701) 408-46-84 Евгений</div>
+											<div class="price-list__item">г.Шымкент +7 (701) 763-01-01 Нуркасым</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="tel:+77009635131" class="top-menu__tel tel _icon-telephone-nobg">+7 (700) 963-51-31</a>
+						</div>
+
+						<a href="tel:+77009635131" class="header__tel tel _icon-telephone-nobg">+7 (700) 963-51-31</a>
+						<button type="button" class="burger" aria-label="Меню"><span class="burger__lines"></span></button>
+					</div>
+				</div>
+				<div class="header__bottom">
+					<div class="header__your-city your-city _icon-location">Ваш город: <span>Астана</span></div>
+
+					<div class="menu-item menu-item__has-submenu" data-da=".top-menu,767.98,2">
+						<div class="menu-item__item-title _icon-arrow-up">Цены на дополнительные услуги</div>
+						<div class="submenu">
+							<div class="submenu__price price-list">
+								<div class="price-list__header">
+									<span>Услуга</span><span>Цена</span>
+								</div>
+								<div class="price-list__body">
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Прошивка коробки передач</p>
+										</div>
+										<div class="price-list__item-price"><span>110.000</span></div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Прострелы под сброс газа (Popcorn)</p>
+										</div>
+										<div class="price-list__item-price">от <span>40.000</span></div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Ограничение максимальной скорости</p>
+										</div>
+										<div class="price-list__item-price"><span>30.000</span></div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Ограничение максимальных оборотов двигателя (P/ N) </p>
+										</div>
+										<div class="price-list__item-price"><span>30.000</span></div>
+									</div>
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Отключение контроля катализатора</p>
+										</div>
+										<div class="price-list__item-price"><span>40.000</span></div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Отключения кодов ошибок</p>
+										</div>
+										<div class="price-list__item-price">от <span>25.000</span> </div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Активация второй ступени масляного насоса</p>
+										</div>
+										<div class="price-list__item-price"><span>40.000</span></div>
+									</div>
+
+									<div class="price-list__item">
+										<div class="price-list__item-col">
+											<p>Холодный термостат</p>
+										</div>
+										<div class="price-list__item-price"><span>40.000</span></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="header__bottom-menu">
+						<a href="https://www.instagram.com/etunerskz/?igshid=MmVlMjlkMTBhMg%3D%3D" class="header__instagram-link instagram-link">Instagram</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+									<li class="menu__item"><a href="#who-we" class="menu__link">Кто мы</a></li>
+									<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+
+				</div>
 			</div>
-			<h2>Готовые страницы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html">Home page</a></li>
-			</ol>
-			<h2>Попапы:</h2>
-			<ol class="rootpage__list">
-				<li><a target="_blank" href="home.html#"></a></li>
-			</ol>
-			<div class="rootpage__tnx">
-				<h2>Спасибо за заказ!</h2>
-				<p>Буду рад хорошему отзыву.</p>
-				<p>Обращайтесь еще!</p>
+		</header>
+		<main class="page">
+
+			<div class="page__promo promo">
+				<div class="promo__container">
+					<div class="promo__slider">
+						<div class="promo__swiper">
+							<div class="promo__slide slide-promo">
+								<picture><source srcset="img/promo/1.webp" type="image/webp"><img class="slide-promo__img" src="img/promo/1.jpg" alt="1"></picture>
+								<div class="slide-promo__content">
+									<div class="slide-promo__title">ЧИП-ТЮНИНГ АВТОМОБИЛЕЙ В казахстане</div>
+									<div class="slide-promo__subtitle">мы любим, то что делаем</div>
+									<div class="slide-promo__text">
+										<p>
+											Мы являемся официальным представителем компании Etuners Greece
+											(<a href="https://www.etuners.gr/">etuners.gr</a>) в Республике Казахстан.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="promo__slide slide-promo">
+								<picture><source srcset="img/promo/2.webp" type="image/webp"><img class="slide-promo__img" src="img/promo/2.jpg" alt="2"></picture>
+								<div class="slide-promo__content">
+									<div class="slide-promo__title">Более 10 Лет опыта в Казахстане</div>
+									<div class="slide-promo__subtitle">Работаем с 2007 года</div>
+									<div class="slide-promo__text">
+										<p>
+											Представительства находятся в 30 странах. Более 150 дилеров по всему
+											миру. В Республике Казахстан 3 дилера.
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div class="promo__slide slide-promo">
+								<picture><source srcset="img/promo/3.webp" type="image/webp"><img class="slide-promo__img" src="img/promo/3.jpg" alt="3"></picture>
+								<div class="slide-promo__content">
+									<div class="slide-promo__title">Техническая поддержка на всем этапе подготовки. </div>
+									<div class="slide-promo__subtitle">Нестандартные решения: </div>
+									<div class="slide-promo__text">
+										<p>
+											Можем настроить с любой конфигурацией, под любые цели и задачи. Будь это
+											гражданская машина или проект для автоспорта.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="promo__slide slide-promo">
+								<picture><source srcset="img/promo/4.webp" type="image/webp"><img class="slide-promo__img" src="img/promo/4.jpg" alt="4"></picture>
+								<div class="slide-promo__content">
+									<div class="slide-promo__title">Самая доступная цена в казахстане</div>
+									<div class="slide-promo__subtitle">предлагаем лучшие решения на рынке</div>
+									<div class="slide-promo__text">
+										<p>
+											Программное обеспечение тестируется в наших штаб квартирах в Греции,
+											Сингапуре, Австралии и Российской Федерации.
+										</p>
+										<p class="slide-promo__text_tab">
+											Много сил и времени тратится на разработку, чтобы
+											конечный потребитель получил безопасный и мощный продукт.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="promo__slider-pagination slider-pagination slider-pagination_white"></div>
+					</div>
+				</div>
 			</div>
-			<div class="rootpage__contacts">
-				<h2>Мои контакты:</h2>
-				<p>Почта: <a href="mailto:spavel.ld@gmail.com">spavel.ld@gmail.com</a></p>
-				<p>Телеграм: <a href="https://t.me/SPashaS">SPashaS</a></p>
-				<p>Weblancer: <a href="https://www.weblancer.net/users/sky_gooner/">sky_gooner</a></p>
+
+			<div class="page__filter filter" id="filter">
+				<div class="filter__container">
+					<div class="filter__wrapper">
+						<h2 class="filter__title title title_mb">Чип тюнинг автомобилей</h2>
+
+						<form class="filter__body" action="/">
+							<select name="mark_id" id="marks" class="filter__select" data-submit>
+								<option value="mark">МАРКА</option>
+								<option value="1">Audi</option>
+								<option value="2">BMW</option>
+								<option value="3">Bentley</option>
+								<option value="4">Cadillac</option>
+								<option value="5">Changan</option>
+								<option value="6">Chery</option>
+								<option value="7">GAC</option>
+								<option value="8">EXEED</option>
+								<option value="9">FAW</option>
+								<option value="10">Ferrari</option>
+								<option value="11">Ford</option>
+								<option value="12">Geely</option>
+								<option value="13">Genesis</option>
+								<option value="14">Hyundai</option>
+							</select>
+							<select name="model_id" id="models" class="filter__select" data-submit>
+								<option value="model">МОДЕЛЬ</option>
+								<option value="a1">a1</option>
+								<option value="a3">a3</option>
+							</select>
+							<select name="year_id" id="years" class="filter__select" data-submit>
+								<option value="year">ГОД</option>
+							</select>
+							<select name="engine_id" id="engines" class="filter__select" disabled data-submit>
+								<option value="engine">МОТОР</option>
+							</select>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="page__result-search result-search-block">
+				<div class="result-search-block__container">
+					<div class="result-search">
+						<div class="result-search__row result-search__row_header">
+							<span class="mod">Модификация</span>
+							<span class="vol">Объем двигателя</span>
+							<span class="hp">Мощность</span>
+							<span class="nm">Крутящий момент</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">audi a3 1.4 TsFI 122 л.с.</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">122 лс</span>
+							<span class="nm">200 нм</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">Audi Q5 3.0 TDI 240 лс</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">240лс</span>
+							<span class="nm">500 нм</span>
+						</div>
+						<div class="result-search__row">
+							<span class="mod">Audi A5 2.0 TFSI 252 лс</span>
+							<span class="vol">1395 cm³</span>
+							<span class="hp">252 лс</span>
+							<span class="nm">370 нм</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="page__result-stages result-stages-block">
+				<div class="result-stages-block__container">
+
+					<div data-tabs class="result-stages-block__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Stage 1</button>
+							<button type="button" class="tabs__title">Stage 2</button>
+							<button type="button" class="tabs__title">Stage 3</button>
+							<button type="button" class="tabs__title">Stage 4</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">1</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 1 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">2</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 2 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">3</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 3 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="result-stages">
+									<div class="result-stages__row result-stages__row_header">
+										<span class="_1">Параметр</span>
+										<span class="_2">Заводские</span>
+										<span class="_3">После тюнинга*</span>
+										<span class="_4">Разница</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Объём двигателя</span>
+										<span class="_2">3993 cm³</span>
+										<span class="_3">3993 cm³</span>
+										<span class="_4">4</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">Крутящий момент</span>
+										<span class="_2">700 hm</span>
+										<span class="_3">1000 hm</span>
+										<span class="_4">+300 нm</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">0-100 км/ч</span>
+										<span class="_2">3.9 сек</span>
+										<span class="_3">3.2 сек</span>
+										<span class="_4">-0,7 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">100-200 км/ч</span>
+										<span class="_2">8.1 сек</span>
+										<span class="_3">5.9 сек</span>
+										<span class="_4">-2.2 сек</span>
+									</div>
+									<div class="result-stages__row">
+										<span class="_1">1/4 мили</span>
+										<span class="_2">11.8сек</span>
+										<span class="_3">10.2 сек</span>
+										<span class="_4">-1.6 сек</span>
+									</div>
+								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 4 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+
+
+			<section class="page__program program">
+				<div class="program__container">
+					<h2 class="program__title">
+						у НАС ВЫ МОЖЕТЕ ПОЛУЧИТЬ ПОЛНУЮ ПРОФФЕСИОНАЛЬНУЮ УСЛУГУ ЧИП-ТЮНИНГА
+					</h2>
+					<div class="program__text">
+						<p>
+							Благодаря огромному опыту наших инженеров мы предлагаем лучшие решения на рынке, по доступной цене.
+							Программное обеспечение тестируется в наших штаб квартирах в Греции, Сингапуре, Австралии и Российской
+							Федерации. Много сил и времени тратится на разработку, чтобы конечный потребитель получил безопасный и
+							мощный продукт.
+						</p>
+					</div>
+					<div class="program__image">
+						<picture><source srcset="img/program/image.webp" type="image/webp"><img src="img/program/image.jpg" alt="img"></picture>
+					</div>
+				</div>
+			</section>
+			<section class="page__why-we why-we">
+				<div class="why-we__container">
+					<div class="why-we__wrapper">
+						<h2 class="why-we__title title title_mb">Почему мы?</h2>
+						<div class="why-we__slider">
+							<div class="why-we__swiper">
+
+								<div class="why-we__slide">
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">> 10 лет опыта работы</div>
+										<p class="why-we-slide-item__text">Компания была основана в 2007 </p>
+									</div>
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">
+											<img src="img/why-we/1-2.svg" alt="Сохраняется заводская гарантия">
+										</div>
+										<p class="why-we-slide-item__text">Сохраняется заводская гарантия</p>
+									</div>
+								</div>
+
+								<div class="why-we__slide">
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">
+											<img src="img/why-we/2-1.svg" alt="Удобное месторасположение">
+										</div>
+										<p class="why-we-slide-item__text">Удобное месторасположение</p>
+									</div>
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">
+											<img src="img/why-we/2-2.svg" alt="Доступная цена!">
+										</div>
+										<p class="why-we-slide-item__text">Доступная цена!</p>
+									</div>
+								</div>
+
+								<div class="why-we__slide">
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">
+											<img src="img/why-we/3-1.svg" alt="Дадим свои рекомендации">
+										</div>
+										<p class="why-we-slide-item__text">Дадим свои рекомендации</p>
+									</div>
+									<div class="why-we-slide-item">
+										<div class="why-we-slide-item__header">
+											<img src="img/why-we/3-2.svg" alt="Поможем сделать правильный выбор">
+										</div>
+										<p class="why-we-slide-item__text">Поможем сделать правильный выбор</p>
+									</div>
+								</div>
+							</div>
+							<div class="why-we__slider-pagination slider-pagination"></div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<div class="page__team team" id="who-we">
+				<div class="team__container">
+					<div class="team__wrapper">
+						<div class="team__body">
+							<div class="team__title">Наша команда:</div>
+							<p class="team__text">
+								Более 10 лет опыта в настройке и 15 лет в ремонте и обслуживании автомобилей.
+								Нестандартные решения: можем настроить с любой конфигурацией, под любые цели и задачи. Будь это
+								гражданская машина или проект для автоспорта.
+								Техническая поддержка на всем этапе подготовки.
+							</p>
+						</div>
+						<div class="team__image">
+							<picture><source srcset="img/team/team.webp" type="image/webp"><img src="img/team/team.jpg" alt="Наша команда:"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="page__options options">
+				<div class="options__container">
+					<h2 class="options__title title title_mb">Дополнительные опции:</h2>
+					<ul class="options__list">
+						<li class="options__item"><picture><source srcset="img/options/1.webp" type="image/webp"><img src="img/options/1.png" alt="1"></picture><span>Прошивка коробки передач</span></li>
+						<li class="options__item"><picture><source srcset="img/options/2.webp" type="image/webp"><img src="img/options/2.png" alt="2"></picture><span>Прострелы под сброс газа
+								(Popcorn)</span></li>
+						<li class="options__item"><picture><source srcset="img/options/3.webp" type="image/webp"><img src="img/options/3.png" alt="3"></picture><span>Ограничение максимальной
+								скорости</span></li>
+						<li class="options__item"><picture><source srcset="img/options/4.webp" type="image/webp"><img src="img/options/4.png" alt="4"></picture><span>Ограничение максимальных оборотов
+								двигателя (P/ N)</span></li>
+						<li class="options__item"><picture><source srcset="img/options/5.webp" type="image/webp"><img src="img/options/5.png" alt="5"></picture><span>Отключение контроля катализатора
+							</span></li>
+						<li class="options__item"><picture><source srcset="img/options/6.webp" type="image/webp"><img src="img/options/6.png" alt="6"></picture><span>Отключения кодов ошибок</span></li>
+						<li class="options__item"><picture><source srcset="img/options/7.webp" type="image/webp"><img src="img/options/7.png" alt="7"></picture><span>Активация второй ступени масляного
+								насоса</span></li>
+						<li class="options__item"><picture><source srcset="img/options/8.webp" type="image/webp"><img src="img/options/8.png" alt="8"></picture><span>Холодный термостат</span></li>
+					</ul>
+				</div>
+			</section>
+			<section class="page__answers answers">
+				<div class="answers__container">
+					<div class="answers__wrapper">
+						<div class="answers__body">
+							<div class="answers__header">
+								<h2 class="answers__title title">Получите Ответы</h2>
+								<p class="answers__subtitle">На интерисующиеся вопросы в месенджерах</p>
+							</div>
+							<ul class="answers__list">
+								<li class="answers__list-item"><span>01</span>Позвоните и получите консультацию. </li>
+								<li class="answers__list-item"><span>02</span>Запишитесь на настройку </li>
+								<li class="answers__list-item"><span>03</span>Получите результат через 3-4 часа.</li>
+							</ul>
+							<div class="answers__footer">
+								<p class="answers__footer-text">
+									Нажмите на кнопку, чтобы начать диалог в выбранном мессенжере
+								</p>
+								<div class="answers__footer-buttons">
+									<a href="https://www.instagram.com/etunerskz/?igshid=MmVlMjlkMTBhMg%3D%3D" class="button button_inst">Instagram</a>
+									<a href="#" class="button">+7 (700) 963-51-31</a>
+								</div>
+							</div>
+						</div>
+						<div class="answers__column">
+							<div class="answers__image">
+								<picture><source srcset="img/answers/mobile.webp" type="image/webp"><img src="img/answers/mobile.png" alt="Мобильная версия сайта"></picture>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__desc desc">
+				<div class="desc__container">
+					<h2 class="desc__title title title_mb">быстро! легко! надёжно!</h2>
+					<div class="desc__content">
+						<div class="desc__header">
+							<div class="desc__header-title">etuners</div>
+							<div class="desc__header-subtitle">Он один такой</div>
+							<picture><source srcset="img/desc/1.webp" type="image/webp"><img src="img/desc/1.jpg" alt="1"></picture>
+						</div>
+						<div class="desc__body">
+							<div class="desc__body-content">
+								<h3 class="desc__body-title">Предлагаем услуги по настройке авто уровней:</h3>
+								<div class="desc__slider">
+									<div class="desc__swiper">
+										<div class="desc__slide">
+											<div class="desc__slide-title">Stage 1</div>
+											<div class="desc__slide-text">Без вмешательства в механическую часть. Только программное
+												обеспечение.
+											</div>
+										</div>
+										<div class="desc__slide">
+											<div class="desc__slide-title">Stage 2</div>
+											<div class="desc__slide-text">Обязательно должен быть удален каталитический нейтрализатор, либо
+												заменен на Downpipe без катализатора. Увеличенный интеркулер для лучшего охлаждения. Доработана
+												система впуска,
+												с заменой штатного воздушного фильтра, на фильтр с нулевым сопротивлением. </div>
+										</div>
+										<div class="desc__slide">
+											<div class="desc__slide-title">Stage 3</div>
+											<div class="desc__slide-text">Обязательно должен быть удален каталитический нейтрализатор, либо
+												заменен на Downpipe без
+												катализатора. Увеличенный интеркулер для лучшего охлаждения. Доработана система впуска,
+												с заменой штатного воздушного фильтра, на фильтр с нулевым сопротивлением. Плюс турбина с
+												большей
+												производительностью. </div>
+										</div>
+										<div class="desc__slide">
+											<div class="desc__slide-title">Stage 4</div>
+											<div class="desc__slide-text">На данном этапе потребуются серьезные доработки двигателя и коробки
+												передач. Обязательно должен быть удален каталитический нейтрализатор, либо заменен на Downpipe
+												без
+												катализатора. Увеличенный интеркулер для лучшего охлаждения. Доработана система впуска, с
+												заменой
+												штатного воздушного фильтра, на фильтр
+												с нулевым сопротивлением. Плюс турбина с большей производительностью. Так же устанавливается
+												впрыск
+												водо-метанола и закиси азота.</div>
+										</div>
+									</div>
+									<div class="desc__slider-pagination slider-pagination"></div>
+								</div>
+							</div>
+							<div class="desc__body-image">
+								<picture><source srcset="img/desc/2.webp" type="image/webp"><img src="img/desc/2.jpg" alt="2"></picture>
+							</div>
+						</div>
+						<div class="desc__footer">
+							<div class="desc__footer-text"></div>
+							<picture><source srcset="img/desc/3.webp" type="image/webp"><img src="img/desc/3.jpg" alt="3"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__brends brends">
+				<div class="brends__container">
+					<h2 class="brends__title title title_mb">Автомобили с которыми мы работаем:</h2>
+					<div class="brends__slider">
+						<div class="brends__swiper">
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/porsche.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/porsche.png" alt="Porsche"></picture>
+							</div>
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/bmw.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/bmw.png" alt="BMW"></picture>
+							</div>
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/audi.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/audi.png" alt="Audi"></picture>
+							</div>
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/mercedes.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/mercedes.png" alt="Mercedes"></picture>
+							</div>
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/folksvagen.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/folksvagen.png" alt="Folksvagen"></picture>
+							</div>
+							<div class="brends__slide">
+								<picture><source srcset="img/brends/skoda.webp" type="image/webp"><img class="brends__slide-image" src="img/brends/skoda.png" alt="Skoda"></picture>
+							</div>
+
+						</div>
+						<div class="brends__slider-navigation slider-navigation">
+							<button class="slider-navigation__arrow slider-navigation__arrow_prev _icon-arrow-up" aria-label="Предыдущий слайд"></button>
+							<button class="slider-navigation__arrow slider-navigation__arrow_next _icon-arrow-up" aria-label="Следующий слайд"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__connect connect" id="contacts">
+				<div class="connect__container">
+					<div class="connect__wrapper">
+						<div class="connect__slider">
+							<div class="connect__swiper">
+								<div class="connect__slide">
+									<div class="connect__slide-title">3</div>
+									<div class="connect__slide-text">Филиала расположены в Казахстане. </div>
+								</div>
+								<div class="connect__slide">
+									<div class="connect__slide-title">30</div>
+									<div class="connect__slide-text">Представителств в других странах</div>
+								</div>
+								<div class="connect__slide">
+									<div class="connect__slide-title">>150</div>
+									<div class="connect__slide-text">Дилеров по всему миру</div>
+								</div>
+							</div>
+							<div class="connect__slider-pagination slider-pagination"></div>
+						</div>
+						<div class="connect__body">
+							<div class="connect__image">
+								<picture><source srcset="img/connect/photo.webp" type="image/webp"><img src="img/connect/photo.jpg" alt="Мы на связи"></picture>
+								<span class="connect__rec"></span>
+							</div>
+							<div class="connect__body-content">
+								<div class="connect__body-title">Мы на связи</div>
+								<p class="connect__body-text">Наша цель - помочь подобрать вам оптимальный Чип-тюнинг под ваши
+									потребности. Не стесняйтесь, давайте пообщаемся! </p>
+							</div>
+							<button class="connect__button button button_br" data-popup="#order-call">оставить заявку</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__info">
+						<div class="footer__logo">
+							<a href="/" class="logo">
+								<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="лого"></picture>
+							</a>
+						</div>
+						<div class="footer__info-body">
+							<span>©2023-2024еTuners.com</span>
+							<span>Все права защищены</span>
+							<a href="#">Публичная оферта</a>
+						</div>
+						<ul class="footer__social social" data-da=".footer__column_connect,767.98,2">
+							<li><a href="#" class="social__icon _icon-youtube" aria-label="Youtube"></a></li>
+							<li><a href="#" class="social__icon _icon-vk" aria-label="VK"></a></li>
+							<li><a href="#" class="social__icon _icon-facebook" aria-label="Facebook"></a></li>
+							<li><a href="https://www.instagram.com/etunerskz/?igshid=MmVlMjlkMTBhMg%3D%3D" class="social__icon _icon-instagram-wh" aria-label="Instagram"></a></li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column_main">
+						<div class="footer__title">Главная</div>
+						<ul class="footer__list">
+							<li><a href="#" class="footer__link">Чип тюнинг</a></li>
+							<li><a href="#" class="footer__link">Приемущества</a></li>
+							<li><a href="#" class="footer__link">Кто мы</a></li>
+							<li><a href="#" class="footer__link">Цены на допольнительные услуги</a></li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column_clients">
+						<div class="footer__title">Клиентам</div>
+						<ul class="footer__list">
+							<li><a href="#" class="footer__link">Услуги по настройки</a></li>
+							<li><a href="#" class="footer__link">Автомобили с короторыми работаем</a></li>
+							<li><a href="#" class="footer__link">Стоимость услуг</a></li>
+							<li><a href="#" class="footer__link">Наши дилеры</a></li>
+						</ul>
+					</div>
+					<div class="footer__column footer__column_connect">
+						<div class="footer__title">Связаться</div>
+						<ul class="footer__list">
+							<li><a href="#" class="footer__link"> +7 (700) 963-51-31 </a></li>
+							<li><a href="#" class="footer__link">Insta: EtunersKz </a></li>
+							<li><a href="#" class="footer__link">Адрес: г.Алматы, проспект Райымбека 486/2</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="order-call" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__text">
+					<div class="order-call">
+						<form action="#" class="order-call__form form form_service">
+							<div class="form__row">
+								<label class="form__label" for="form-your-name">как вас зовут</label>
+								<div class="form__input">
+									<input id="form-your-name" autocomplete="off" type="text" name="name" placeholder="Введите ваше имя" data-required>
+								</div>
+							</div>
+							<div class="form__row">
+								<label class="form__label" for="form-your-phone">введите ваш номер телефона</label>
+								<div class="form__input">
+									<input id="form-your-phone" autocomplete="off" type="text" name="number" placeholder="+7 (999) 999-99-99" data-required>
+								</div>
+							</div>
+
+							<div class="form__row">
+								<label class="form__label" for="form-your-text">Кратко пишите какая услуга вас интерисует</label>
+								<div class="form__input">
+									<input id="form-your-text" autocomplete="off" type="text" name="service" placeholder="Например: отключение контроля катализатора" data-required>
+								</div>
+							</div>
+
+							<div class="form__row">
+								<div class="form__label form__label_center">Выберите удобный вид связи</div>
+								<div class="form__select">
+									<div class="form__select-item">
+										<input id="type-contacts-phone" type="radio" name="type-contacts" value="Телефон" checked>
+										<label for="type-contacts-phone">
+											<span class="_icon-telephone"></span>
+											<span>Телефон</span>
+										</label>
+									</div>
+
+									<div class="form__select-item">
+										<input id="type-contacts-whatsapp" type="radio" name="type-contacts" value="Whatsapp">
+										<label for="type-contacts-whatsapp">
+											<span class="_icon-whatsapp"></span>
+											<span>WhatsApp</span>
+										</label>
+									</div>
+
+									<div class="form__select-item">
+										<input id="type-contacts-telegram" type="radio" name="type-contacts" value="Telegram">
+										<label for="type-contacts-telegram">
+											<span class="_icon-telegram"></span>
+											<span>@Rebelkz</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__submit">
+								<button class="button" type="submit">Выберите удобный вид связи</button>
+							</div>
+
+						</form>
+						<p class="order-call__politics-user">
+							Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с Политикой конфиденциальности.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
+	<script src="js/app.js"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #272727;
-		background-color: #f4f4f4;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #000000
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #424242;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #000000;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #010101;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-		color: #ffffff;
-	}
-
-	.rootpage__contacts h2,
-	.rootpage__tnx h2 {
-		color: #f4f4f4;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #b10000;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ffffff;
-	}
-
-	.rootpage__tnx {
-		background: #b10000;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>

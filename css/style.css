@@ -357,6 +357,10 @@ h6 {
     background: #d9d9d9;
   }
 }
+.select__option:first-child {
+  pointer-events: none;
+  color: #999999;
+}
 .select__row {
   display: inline-flex;
   align-items: center;
@@ -1553,9 +1557,6 @@ h2 {
   }
 }
 
-.result-stages-block__tabs {
-  margin-bottom: 40px;
-}
 .result-stages-block__price-row {
   display: grid;
   gap: 20px;
@@ -1605,16 +1606,19 @@ h2 {
   padding: 10px;
   display: grid;
   gap: 10px;
+  margin-bottom: 20px;
 }
 @media (min-width: 767.98px) {
   .result-stages {
     padding: 20px;
     gap: 40px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 991.98px) {
   .result-stages {
     padding: 40px 37.5px;
+    margin-bottom: 40px;
   }
 }
 .result-stages__row {
