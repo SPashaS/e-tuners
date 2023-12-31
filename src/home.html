@@ -82,9 +82,9 @@
 					<div class="filter__wrapper">
 						<h2 class="filter__title title title_mb">Чип тюнинг автомобилей</h2>
 
-						<form class="filter__body" action="/">
-							<select name="mark_id" id="marks" class="filter__select" data-submit>
-								<option value="0">МАРКА</option>
+						<form class="filter__body" action="#">
+							<select name="mark_id" id="marks" class="filter__select">
+								<option value="mark">МАРКА</option>
 								<option value="1">Audi</option>
 								<option value="2">BMW</option>
 								<option value="3">Bentley</option>
@@ -100,17 +100,15 @@
 								<option value="13">Genesis</option>
 								<option value="14">Hyundai</option>
 							</select>
-							<select name="model_id" id="models" class="filter__select" disabled data-submit>
-								<option value="1">МОДЕЛЬ</option>
-
+							<select name="model_id" id="models" class="filter__select">
+								<option value="model">МОДЕЛЬ</option>
 							</select>
-							<select name="year_id" id="years" class="filter__select" disabled data-submit>
-								<option value="1">ГОД</option>
-
+							<select name="year_id" id="years" class="filter__select">
+								<option value="year">ГОД</option>
 							</select>
-							<select name="engine_id" id="engines" class="filter__select" disabled data-submit>
-								<option value="1">МОТОР</option>
-							</select>
+							<select name="engine_id" id="engines" class="filter__select">
+								<option value="engine">МОТОР</option>
+							</select> 
 						</form>
 
 					</div>
@@ -198,6 +196,10 @@
 										<span class="_4">-1.6 сек</span>
 									</div>
 								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 1 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
 							</div>
 							<div class="tabs__body">
 								<div class="result-stages">
@@ -237,6 +239,10 @@
 										<span class="_3">10.2 сек</span>
 										<span class="_4">-1.6 сек</span>
 									</div>
+								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 2 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
 								</div>
 							</div>
 							<div class="tabs__body">
@@ -278,6 +284,10 @@
 										<span class="_4">-1.6 сек</span>
 									</div>
 								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 3 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
 							</div>
 							<div class="tabs__body">
 								<div class="result-stages">
@@ -318,14 +328,15 @@
 										<span class="_4">-1.6 сек</span>
 									</div>
 								</div>
+								<div class="result-stages-block__price-row">
+									<div class="result-stages-block__price">Стоимость: 4 <span> в </span></div>
+									<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="result-stages-block__price-row">
-						<div class="result-stages-block__price">Стоимость: 777 103,72 <span> в </span></div>
-						<a href="/" class="result-stages-block__price-btn">заказать тюнинг</a>
-					</div>
+
 
 
 				</div>

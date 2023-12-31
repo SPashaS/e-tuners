@@ -194,11 +194,18 @@ class SelectConstructor {
 						const optionItem = document.querySelector(`.${this.selectClasses.classSelect}[data-id="${targetTag.dataset.selectId}"] .select__option[data-value="${targetTag.dataset.value}"]`);
 						this.optionAction(selectItem, originalSelect, optionItem);
 					} else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectTitle))) {
+						this.selectsСlose();
 						// Обработка клика на заголовок селекта
 						this.selectAction(selectItem);
 					} else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption))) {
 						// Обработка клика на элемент селекта
 						const optionItem = targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption));
+
+						//ФП
+						// const clickSelect = optionItem.closest('.select').dataset.id; // наж select
+						// this.setDisableAfterSelectsForSend(clickSelect);
+						// ФП END
+
 						this.optionAction(selectItem, originalSelect, optionItem);
 					}
 				}
@@ -213,6 +220,37 @@ class SelectConstructor {
 			this.selectsСlose();
 		}
 	}
+	//ФП
+	setSelects() {
+		const selects = document.querySelectorAll('.filter__select');
+		for (let i = 0; i < selects.length; i++) {
+			const select = selects[i];
+			// console.log(select);
+
+			// console.dir(select.closest('.select').dataset.id);
+
+			// if(select.hasAttribute('disabled')) {
+			// 	console.dir(select.closest('.select').dataset.id);
+			// }
+		}
+	}
+	// отпавка инфы по нажатому селекту
+	setDisableAfterSelectsForSend(clickSelect) {
+		const selects = document.querySelectorAll('.filter__select');
+		if (clickSelect < selects.length) {
+			// console.log('id < 4');
+			for (let i = clickSelect; i < selects.length; i++) {
+				const select = selects[i];
+				select.setAttribute('disabled','disabled');
+				select.closest('.select').classList.add('_select-disabled');
+				select.closest('.select').querySelector('.select__content').innerHTML = select[0].innerHTML;
+
+				// select[0].setAttribute('checked', 'checked');
+				// console.log(select.closest('.select').querySelector('.select__content'));
+			}
+		}
+	}
+	//ФП END
 	// Функция закрытия всех селектов
 	selectsСlose() {
 		const selectActiveItems = document.querySelectorAll(`${this.getSelectClass(this.selectClasses.classSelect)}${this.getSelectClass(this.selectClasses.classSelectOpen)}`);
@@ -242,6 +280,12 @@ class SelectConstructor {
 	getSelectTitleValue(selectItem, originalSelect) {
 		// Получаем выбранные текстовые значения
 		let selectTitleValue = this.getSelectedOptionsData(originalSelect, 2).html;
+
+		//ФП    
+		if (selectTitleValue[0].length > 6) {
+      selectTitleValue[0] = `${selectTitleValue[0].slice(0,6)}...`
+    }
+
 		// Обработка значений мультивыбора
 		// Если включен режим тегов (указана настройка data-tags)
 		if (originalSelect.multiple && originalSelect.hasAttribute('data-tags')) {
@@ -256,10 +300,10 @@ class SelectConstructor {
 		selectTitleValue = selectTitleValue.length ? selectTitleValue : originalSelect.dataset.placeholder;
 		// Если есть значение, добавляем класс
 		this.getSelectedOptionsData(originalSelect).values.length ? selectItem.classList.add(this.selectClasses.classSelectActive) : selectItem.classList.remove(this.selectClasses.classSelectActive);
+		
 		// Возвращаем поле ввода для поиска или текст
 		if (originalSelect.hasAttribute('data-search')) {
 			// Выводим поле ввода для поиска
-
 			return `<div class="${this.selectClasses.classSelectTitle}"><span class="${this.selectClasses.classSelectValue}"><input autocomplete="off" type="text" placeholder="${selectTitleValue}" data-placeholder="${selectTitleValue}" class="${this.selectClasses.classSelectInput}"></span></div>`;
 		} else {
 			// Если выбран элемент со своим классом
@@ -298,6 +342,7 @@ class SelectConstructor {
 			}
 		}
 	}
+
 	// Получение данных из выбранных элементов
 	getSelectedOptionsData(originalSelect, type) {
 		// Получаем все выбранные объекты из select
@@ -315,6 +360,7 @@ class SelectConstructor {
 			values: selectedOptions.filter(option => option.value).map(option => option.value),
 			html: selectedOptions.map(option => this.getSelectElementContent(option))
 		}
+	
 	}
 	// Конструктор элементов списка
 	getOptions(originalSelect) {
@@ -405,27 +451,39 @@ class SelectConstructor {
 	}
 	// Обработчик изменения в селекте
 	setSelectChange(originalSelect) {
+		// console.log(originalSelect);
 		// Моментальная валидация селекта
 		if (originalSelect.hasAttribute('data-validate')) {
 			formValidate.validateInput(originalSelect);
 		}
 		// При изменении селекта отправляем форму
 		if (originalSelect.hasAttribute('data-submit') && originalSelect.value) {
+			// console.log(originalSelect);
 			let tempButton = document.createElement("button");
 			tempButton.type = "submit";
 			originalSelect.closest('form').append(tempButton);
+			// console.log('send');
 			tempButton.click();
 			tempButton.remove();
 		}
 		const selectItem = originalSelect.parentElement;
 		// Вызов коллбэк функции
 		this.selectCallback(selectItem, originalSelect);
+
+
+		//
+		// this.setSelects();
+		// console.log(this.selectCallback(selectItem, originalSelect));
+		// console.log(originalSelect);
 	}
 	// Обработчик disabled
 	selectDisabled(selectItem, originalSelect) {
 		if (originalSelect.disabled) {
 			selectItem.classList.add(this.selectClasses.classSelectDisabled);
 			this.getSelectElement(selectItem, this.selectClasses.classSelectTitle).selectElement.disabled = true;
+			
+			//ФП
+			this.getSelectElement(selectItem, this.selectClasses.classSelectTitle).selectElement.disabled = 'disabled';
 		} else {
 			selectItem.classList.remove(this.selectClasses.classSelectDisabled);
 			this.getSelectElement(selectItem, this.selectClasses.classSelectTitle).selectElement.disabled = false;
@@ -462,6 +520,7 @@ class SelectConstructor {
 	setLogging(message) {
 		this.config.logging ? FLS(`[select]: ${message}`) : null;
 	}
+
 }
 // Запускаем и добавляем в объект модулей
 flsModules.select = new SelectConstructor({});

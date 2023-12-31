@@ -238,7 +238,8 @@
     }
 
     @media (min-width:$pc){
-      padding: 74px 29px;
+      // padding: 74px 29px;
+      padding: 74px;
     }
   }
 
@@ -259,8 +260,12 @@
     }
 
     @media (min-width:$tablet){
-      display: flex;
-      justify-content: center;
+      max-width: 100%;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    @media (min-width:$pc){
       gap: 60px;
     }
   }
@@ -386,7 +391,7 @@
   // .result-stages-block__tabs
 
   &__tabs {
-    margin-bottom: 40px;
+
   }
 
   // .result-stages-block__price-row
@@ -444,14 +449,16 @@
   padding: 10px;
   display: grid;
   gap: 10px;
+  margin-bottom: 20px;
   @media (min-width:$mobile){
     padding: 20px;
-    gap: 40px; 
+    gap: 40px;
+    margin-bottom: 30px;
   }
 
   @media (min-width:$tablet){
     padding: 40px 37.5px;
-
+    margin-bottom: 40px;
   }
 
 

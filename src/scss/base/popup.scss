@@ -112,6 +112,25 @@ body.popup-show::after {
 		font-weight: 300;
 	}
 
+	// .order-call__thanks
+
+	&__thanks {
+		display: grid;
+		justify-items: center;
+		gap: 48px;
+	}
+
+	// .order-call__thanks-title
+
+	&__thanks-title {
+	}
+
+	// .order-call__thanks-text
+
+	&__thanks-text {
+		text-align: center;
+	}
+
 }
 
 

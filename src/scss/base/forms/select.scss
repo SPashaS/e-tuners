@@ -110,6 +110,10 @@
 				background: #d9d9d9;
 			}
 		}
+		&:first-child {
+			pointer-events: none;
+			color: #999999
+		}
 	}
 
 	// Конструкция дополнительных данных
