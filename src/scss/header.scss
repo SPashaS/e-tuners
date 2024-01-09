@@ -234,8 +234,10 @@
 
 
 	&__price {
-
 	}
+
+	// .submenu__dillers
+	&__dillers {}
 
 	.submenu-open & {
 		transform: translate(-50%, 0);
@@ -288,7 +290,7 @@
 	}
 }
 
-.instagram-link {
+.inst-link {
 	display: inline-flex;
 	align-items: center;
 	gap: 10px;
@@ -329,6 +331,10 @@
 	// .menu-has-children__price
 	&__price {}
 }
+
+
+
+
 
 .price-list {
 	background-color: rgba(55, 113, 200, 0.31);
@@ -399,6 +405,36 @@
 				width: 12px;
 				height: 14px;
 			}
+		}
+	}
+}
+
+.dillers-list {
+	background-color: rgba(55, 113, 200, 0.31);
+  // .dillers-list__body
+
+	&__body {
+		border-radius: 7px;
+		color: var(--main-color-text);
+		line-height: 1.375;
+		text-transform: math-auto;
+	}
+
+	// .dillers-list__item
+
+	&__item {
+		padding: 20px;
+		border-radius: 5px;
+		background: #EBF1FC;
+		box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.11);
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 5px;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
 		}
 	}
 }

@@ -97,7 +97,9 @@
 
   // .promo__swiper
 
-  &__swiper {}
+  &__swiper {
+    display: flex;
+  }
 
   // .promo__slide
   &__slide {
@@ -421,13 +423,8 @@
   &__price {
     text-transform: uppercase;
     font-size: 1.4rem;
-
-    span::before {
-      content: "₸";
-    }
-
     span::after {
-      content: "$";
+      content: "₸";
     }
   }
 
@@ -1237,7 +1234,9 @@
   }
 
   // .brends__swiper
-  &__swiper {}
+  &__swiper {
+    display: flex;
+  }
 
   // .brends__slide
   &__slide {

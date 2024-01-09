@@ -202,8 +202,8 @@ class SelectConstructor {
 						const optionItem = targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption));
 
 						//ФП
-						// const clickSelect = optionItem.closest('.select').dataset.id; // наж select
-						// this.setDisableAfterSelectsForSend(clickSelect);
+						const clickSelect = optionItem.closest('.select').dataset.id; // наж select
+						this.setDisableAfterSelectsForSend(clickSelect);
 						// ФП END
 
 						this.optionAction(selectItem, originalSelect, optionItem);
@@ -221,19 +221,19 @@ class SelectConstructor {
 		}
 	}
 	//ФП
-	setSelects() {
-		const selects = document.querySelectorAll('.filter__select');
-		for (let i = 0; i < selects.length; i++) {
-			const select = selects[i];
-			// console.log(select);
+	// setSelects() {
+	// 	const selects = document.querySelectorAll('.filter__select');
+	// 	for (let i = 0; i < selects.length; i++) {
+	// 		const select = selects[i];
+	// 		// console.log(select);
 
-			// console.dir(select.closest('.select').dataset.id);
+	// 		// console.dir(select.closest('.select').dataset.id);
 
-			// if(select.hasAttribute('disabled')) {
-			// 	console.dir(select.closest('.select').dataset.id);
-			// }
-		}
-	}
+	// 		// if(select.hasAttribute('disabled')) {
+	// 		// 	console.dir(select.closest('.select').dataset.id);
+	// 		// }
+	// 	}
+	// }
 	// отпавка инфы по нажатому селекту
 	setDisableAfterSelectsForSend(clickSelect) {
 		const selects = document.querySelectorAll('.filter__select');
@@ -281,10 +281,13 @@ class SelectConstructor {
 		// Получаем выбранные текстовые значения
 		let selectTitleValue = this.getSelectedOptionsData(originalSelect, 2).html;
 
-		//ФП    
-		if (selectTitleValue[0].length > 6) {
-      selectTitleValue[0] = `${selectTitleValue[0].slice(0,6)}...`
-    }
+		//ФП
+		if (window.matchMedia("(min-width: 992px)").matches) {
+			if (selectTitleValue[0].length > 6) {
+				selectTitleValue[0] = `${selectTitleValue[0].slice(0,6)}...`
+			}
+		}
+	
 
 		// Обработка значений мультивыбора
 		// Если включен режим тегов (указана настройка data-tags)

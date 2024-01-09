@@ -216,17 +216,6 @@ export function formSubmit(validate) {
 		}, 0);
 		// Очищаем форму
 		formValidate.formClean(form);
-		// ФП
-		const orderBody = document.querySelector('.order-call');
-		orderBody.innerHTML = `<div class="order-call__thanks">
-			<h2 class="order-call__thanks-title">Спасибо за заявку</h2>
-			<p class="order-call__thanks-text">
-				Мы свяжемся с вами в самое ближайшее время, ожидайте звонка
-			</p>
-			<div class="logo">
-				<img class="logo__image" src="/img/logo.png" alt="Логотип">
-			</div> 
-			</div>`;
 		// Сообщаем в консоль
 		formLogging(`Форма отправлена!`);
 	}
