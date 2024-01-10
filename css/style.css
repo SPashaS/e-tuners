@@ -341,6 +341,7 @@ h6 {
   overflow-x: hidden;
   touch-action: pan-y;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   max-height: 200px;
 }
 .select__option {
