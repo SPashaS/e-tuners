@@ -338,8 +338,6 @@ h6 {
 }
 .select__scroll {
   overflow-y: scroll;
-  transform: translate3d(0, 0, 0);
-  -webkit-overflow-scrolling: touch;
   max-height: 200px;
 }
 .select__option {
