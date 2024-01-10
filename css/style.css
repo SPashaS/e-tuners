@@ -338,9 +338,7 @@ h6 {
 }
 .select__scroll {
   overflow-y: scroll;
-  overflow-x: hidden;
-  touch-action: pan-y;
-  scroll-behavior: smooth;
+  transform: translate3d(0, 0, 0);
   -webkit-overflow-scrolling: touch;
   max-height: 200px;
 }
