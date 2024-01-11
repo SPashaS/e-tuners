@@ -106,6 +106,7 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+  -webkit-overflow-scrolling: touch;
 }
 
 *,
@@ -338,8 +339,7 @@ h6 {
 }
 .select__scroll {
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  height: 200px;
+  max-height: 200px;
 }
 .select__option {
   width: 100%;
