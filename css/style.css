@@ -2542,9 +2542,10 @@ h2 {
   width: auto;
   max-width: 100%; /* Not required for horizontal scroll to trigger */
   max-height: 100%; /* Needed for vertical scroll to trigger */
-  overflow: auto;
+  overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .simplebar-content-wrapper::-webkit-scrollbar,
