@@ -190,7 +190,6 @@ h6 {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   position: relative;
 }
 .wrapper > main {
@@ -800,7 +799,7 @@ h2 {
     color: var(--main-color-text);
     padding: 10px 20px;
     width: 310px;
-    transform: translateX(calc(100% + 15px));
+    transform: translateY(calc(-200% - 15px));
     transition: all 0.3s ease 0s;
   }
   .menu-open .header__top-menu {
@@ -1459,7 +1458,6 @@ h2 {
 }
 
 .filter {
-  overflow: visible;
   position: relative;
   z-index: 5;
 }
@@ -2264,6 +2262,9 @@ h2 {
   }
 }
 
+.brends {
+  overflow: hidden;
+}
 @media (min-width: 991.98px) {
   .brends__slider {
     overflow: visible !important;
